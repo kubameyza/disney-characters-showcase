@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding-right: 1rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  padding: 0 1rem;
+  text-decoration: none;
+  color: black;
+  height: 50px;
+}
+
+.link:hover {
+  background-color: grey;
+  color: white;
+}

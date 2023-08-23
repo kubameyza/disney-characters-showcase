@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" elemetn={<DisneyCaracters />} />
+          <Route path="/" element={<DisneyCaracters />} />
           <Route path="/MyFavorites" elemetnt={<MyFavorites />} />
         </Route>
       </Routes>
