@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Layout from './components/Layout/Layout';
-import DisneyCaracters from './components/DisneyCharacters/DisneyCaracters';
+import DisneyCharacters from './components/DisneyCharacters/DisneyCharacters';
 import MyFavorites from './components/MyFavorites/MyFavorites';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<DisneyCaracters />} />
+          <Route path="/" element={<DisneyCharacters />} />
           <Route path="/MyFavorites" elemetnt={<MyFavorites />} />
         </Route>
       </Routes>

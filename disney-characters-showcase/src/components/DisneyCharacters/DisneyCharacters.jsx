@@ -1,4 +1,4 @@
 const DisneyCaracters = () => {
-  return <div>DisneyCaracters</div>;
+  return <div>DisneyCharacters</div>;
 };
 export default DisneyCaracters;
