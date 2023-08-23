@@ -1,0 +1,26 @@
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 130px 1fr auto auto;
+  grid-template-areas:
+    'navbar'
+    'most_popular'
+    'page_content'
+    'footer';
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.most_popular {
+  grid-area: most_popular;
+}
+
+.page_content {
+  grid-area: page_content;
+}
+
+.footer {
+  grid-area: footer;
+}
