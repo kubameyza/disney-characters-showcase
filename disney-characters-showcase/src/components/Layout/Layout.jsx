@@ -13,6 +13,7 @@ const Layout = () => {
       'https://api.disneyapi.dev/character?pageSize=100'
     );
     const characters = await response.json();
+    console.log(characters);
     setCharacters(characters.data);
   };
 
@@ -29,7 +30,7 @@ const Layout = () => {
         <MostPopular characters={characters} />
       </div>
       <div className={styles.page_content}>
-        <Outlet />
+        <Outlet context={[characters, setCharacters]} />
       </div>
       <div className={styles.footer}>
         <Footer />

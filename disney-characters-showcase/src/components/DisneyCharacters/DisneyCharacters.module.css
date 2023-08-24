@@ -1,0 +1,22 @@
+.headers {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.characters_wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 2rem;
+}
+
+.background {
+  width: 100vw;
+  background-color: #f2f2f2;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+}

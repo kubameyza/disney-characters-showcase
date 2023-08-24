@@ -11,7 +11,6 @@ const MostPopular = ({ characters }) => {
     );
     const topThree = sorted.slice(0, 3);
     setMostPopular(topThree);
-    console.log(topThree);
   };
 
   useEffect(() => {
