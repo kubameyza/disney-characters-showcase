@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import styles from './CharacterListItem.module.css';
+import { toggleFavorites } from '../../utils/toggleFavorites';
 
 const CharacterListItem = ({ character }) => {
+  const [isFavorite, setIsFavorite] = useState(false);
+
+  const handleClick = () => {
+    toggleFavorites(character, isFavorite, setIsFavorite);
+  };
+
   return (
     <div className={styles.list_item}>
       <div className={styles.img_wrapper}>
@@ -21,11 +29,13 @@ const CharacterListItem = ({ character }) => {
       <p className={styles.list_element_wrapper}>{character.films.length}</p>
 
       <div className={styles.list_element_wrapper}>
-        <img
-          className={styles.star_icon}
-          src="star_empty.png"
-          alt="star icon"
-        />
+        <button className={styles.star_btn} onClick={handleClick}>
+          <img
+            className={styles.star_icon}
+            src={isFavorite ? 'star_full.png' : 'star_empty.png'}
+            alt="star icon"
+          />
+        </button>
       </div>
     </div>
   );

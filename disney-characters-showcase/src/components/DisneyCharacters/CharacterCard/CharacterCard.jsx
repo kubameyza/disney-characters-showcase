@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import styles from './CharacterCard.module.css';
+import { toggleFavorites } from '../../../utils/toggleFavorites';
 
 const CharacterCard = ({ character }) => {
   const [isFavorite, setIsFavorite] = useState(false);
 
   const handleClick = () => {
-    setIsFavorite(!isFavorite);
+    toggleFavorites(character, isFavorite, setIsFavorite);
   };
 
   return (

@@ -23,7 +23,7 @@
 
 .star_icon {
   height: 24px;
-  padding: 0 2rem;
+  cursor: pointer;
 }
 
 .name_field {
@@ -43,4 +43,9 @@
   justify-content: center;
   align-items: center;
   width: 6rem;
+}
+
+.star_btn {
+  border: none;
+  background-color: transparent;
 }
