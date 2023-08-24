@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<DisneyCharacters />} />
-          <Route path="/MyFavorites" elemetnt={<MyFavorites />} />
+          <Route path="/myfavorites" element={<MyFavorites />} />
         </Route>
       </Routes>
     </>

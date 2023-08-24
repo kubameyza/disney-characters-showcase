@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import styles from './CharacterCard.module.css';
-import { toggleFavorites } from '../../../utils/toggleFavorites';
+import { toggleFavorites } from '../../../utils/toggleFavorite';
 
 const CharacterCard = ({ character }) => {
   const [isFavorite, setIsFavorite] = useState(false);
 
   const handleClick = () => {
-    toggleFavorites(character, isFavorite, setIsFavorite);
+    toggleFavorites(character);
+    setIsFavorite(!isFavorite);
   };
 
   return (
@@ -31,11 +32,11 @@ const CharacterCard = ({ character }) => {
         <div className={styles.info_section}>
           <div className={styles.films}>
             <p>Films:</p>
-            <p>{character.films.length}</p>
+            <p>{character?.films?.length}</p>
           </div>
           <div className={styles.shows}>
             <p>Tv shows:</p>
-            <p>{character.tvShows.length}</p>
+            <p>{character?.tvShows?.length}</p>
           </div>
         </div>
       </div>

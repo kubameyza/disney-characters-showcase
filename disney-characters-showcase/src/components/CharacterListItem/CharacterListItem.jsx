@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import styles from './CharacterListItem.module.css';
-import { toggleFavorites } from '../../utils/toggleFavorites';
+import { toggleFavorites } from '../../utils/toggleFavorite';
 
 const CharacterListItem = ({ character }) => {
   const [isFavorite, setIsFavorite] = useState(false);
 
   const handleClick = () => {
-    toggleFavorites(character, isFavorite, setIsFavorite);
+    toggleFavorites(character);
+    setIsFavorite(!isFavorite);
   };
 
   return (
