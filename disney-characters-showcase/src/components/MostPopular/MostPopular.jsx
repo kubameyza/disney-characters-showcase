@@ -10,7 +10,6 @@ const MostPopular = ({ characters }) => {
       a.films.length < b.films.length ? 1 : -1
     );
     const topThree = sorted.slice(0, 3);
-    console.log(topThree);
     setMostPopular(topThree);
   };
 

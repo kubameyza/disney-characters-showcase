@@ -4,7 +4,6 @@ import MostPopular from '../MostPopular/MostPopular';
 import Footer from '../Footer/Footer';
 import styles from './Layout.module.css';
 import { useEffect, useState } from 'react';
-import SearchBar from '../Searchbar/Searchbar';
 
 const Layout = () => {
   const [characters, setCharacters] = useState([]);

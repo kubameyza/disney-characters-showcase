@@ -26,7 +26,6 @@ const MyFavorites = () => {
     const favorites = keys.map((key) => ({
       ...JSON.parse(localStorage.getItem(key)),
     }));
-    console.log(favorites);
     setCharacters(favorites);
   };
 

@@ -2,7 +2,6 @@ import CharacterListItem from '../CharacterListItem/CharacterListItem';
 import { useOutletContext } from 'react-router-dom';
 import styles from './DisneyCharacters.module.css';
 import { useState } from 'react';
-import SearchBar from '../Searchbar/Searchbar';
 
 const DisneyCharacters = () => {
   const [characters] = useOutletContext();
@@ -16,7 +15,6 @@ const DisneyCharacters = () => {
     <div className={styles.background}>
       <div className={styles.characters_wrapper}>
         <h2 className={styles.header}>Disney Characters</h2>
-
         <div className={styles.headers}>
           <p>Picture</p>
           <p>Name</p>
